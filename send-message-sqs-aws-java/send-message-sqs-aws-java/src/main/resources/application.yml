@@ -1,0 +1,32 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /send-message-sqs
+    
+---
+spring:
+  profiles: dev
+
+send-properties:
+  regionSqsAws: sa-east-1
+  awsAccessKey:  
+  awsSecretKey: 
+  awsQueue: fila-teste-sqs
+---
+spring:
+  profiles: hom
+
+send-properties:
+  regionSqsAws: sa-east-1
+  awsAccessKey:  
+  awsSecretKey: 
+  awsQueue: fila-teste-sqs
+---
+spring:
+  profiles: prd
+
+send-properties:
+  regionSqsAws: sa-east-1
+  awsAccessKey:  
+  awsSecretKey: 
+  awsQueue: fila-teste-sqs
