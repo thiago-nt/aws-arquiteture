@@ -1,0 +1,38 @@
+server:
+  servlet:
+    context-path: /receiver-message
+---
+
+spring:
+  profiles: dev
+
+receive-properties:
+  urlRest: http://localhost:8080
+  regionSqsAws: sa-east-1
+  awsAccessKey:  
+  awsSecretKey: 
+  awsQueue: 
+
+---
+
+spring:
+  profiles: hom
+
+receive-properties:
+  urlRest: http://localhost:8080
+  regionSqsAws: sa-east-1
+  awsAccessKey:  
+  awsSecretKey: 
+  awsQueue: 
+---
+
+spring:
+  profiles: prd
+
+receive-properties:
+  urlRest: http://localhost:8080
+  regionSqsAws: sa-east-1
+  awsAccessKey:  
+  awsSecretKey: 
+  awsQueue: 
+
